@@ -103,7 +103,7 @@ onMounted(() => {
                             <h5>{{ cake.ukuran?.nama }}</h5>
                         </div>
                         <div class="col-lg-1 text-end">
-                            <i class="bi bi-pencil fs-3 fw-bold edit"></i>
+                            <i class="bi bi-pencil fs-3  fw-bold edit"></i>
                         </div>
                         <div class="col-lg-1">
                             <i class="bi bi-trash3 fs-3 fw-bold delete" data-bs-toggle="modal"

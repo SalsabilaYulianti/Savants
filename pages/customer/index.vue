@@ -52,7 +52,7 @@ onMounted (() => {
                                     <li class="list-group-item cake fw-semibold">{{ customer.produk.nama_kue }}</li>
                                 </ul>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 ">
                                 <img :src="customer.produk?.foto_kue" alt="img-cake" class="rounded-3">
                             </div>
                         </div>
@@ -131,6 +131,7 @@ h2, li, .btn {
     margin-top: 20px;
     font-size: 20px;
 }
+
 
 img {
     width: 175px;

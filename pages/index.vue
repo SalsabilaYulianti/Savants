@@ -249,11 +249,11 @@
                 <div class="col-sm-1">
                     <img src="../assets/img/logo-rb.png" alt="img-logo" class="logo">
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 p-3">
                     <h3>Kiana Cake and Cookies</h3>
                     <h5>Cake for every moment</h5>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 p-3">
                     <h4 class="address">Alamat</h4>
                     <hr>
                     <div class="row">
@@ -265,7 +265,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 p-3">
                     <h4>Social Media</h4>
                     <hr>
                     <div class="socialmedia mt">

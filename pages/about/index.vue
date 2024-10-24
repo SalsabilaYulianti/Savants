@@ -2,12 +2,12 @@
     <div class="container-fluid pt-4">
         
         <div class="row">
-            <div class="col-sm-1 mt-2">
+            <div class="col-lg-1 text-end mt-2">
                 <nuxt-link to="/" style="text-decoration: none; color: black;">
                     <i class="bi bi-arrow-left-circle fs-2"></i>
                 </nuxt-link>
             </div>
-            <div class="col-sm-10 about">
+            <div class="col-lg-10 about">
                 <h2 class="mt-3">About</h2>
             </div>
         </div>
@@ -89,9 +89,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Miltonian+Tattoo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&display=swap');
 
 .card {
-  background: url('~/assets/img/img-about.png') no-repeat center center;
-  background-size: cover;
-  height: 350px;
+    background: url('~/assets/img/img-about.png') no-repeat center center;
+    background-size: cover;
+    height: 350px;
   /* width: 100%; */
 }
 
@@ -112,15 +112,15 @@ h5, h6 {
 }
 
 .content h3 {
-  font-family: "Berkshire Swash", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .content h5 {
-  font-family: "Charmonman", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Charmonman", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .img-logo {

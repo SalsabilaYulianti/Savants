@@ -8,7 +8,7 @@ const shouldShowNavbar = !hiddenRoutes.includes(route.name)
 const isActive = ref('home');
 
 const setActive = (tab) => {
-  isActive.value = tab;
+    isActive.value = tab;
 };
 
 </script>

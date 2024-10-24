@@ -1,27 +1,28 @@
 <template>
     <div class="container-fluid p-0">
-
-        <div class="text-center">
+        <div class="text text-center p-5 ">
             <h2>Silahkan login, <b>Admin</b></h2>
         </div>
 
-        <div class="row mt-5 justify-content-center">
+        <div class="row mt-2 justify-content-center">
             <div class="col-lg-4">
                 <div class="card rounded-4 shadow">
                     <div class="card-body p-5">
                         <form @submit.prevent="SignIn">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                                <input v-model="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input v-model="email" type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input v-model="password" type="password" class="form-control" id="exampleInputPassword1">
+                                <input v-model="password" type="password" class="form-control"
+                                    id="exampleInputPassword1">
                             </div>
                             <div class="text-center mt-5">
                                 <button type="submit" class="btn rounded-5 fs-5">Submit</button>
                             </div>
-                        </form> 
+                        </form>
                     </div>
                 </div>
             </div>
@@ -32,17 +33,17 @@
 <script setup>
 
 const supabase = useSupabaseClient()
-const email = ref ("")
-const password = ref ("")
+const email = ref("")
+const password = ref("")
 
 async function SignIn() {
-  const { data, error } = await supabase.auth.signInWithPassword({
-    email: email.value,
-    password: password.value,
-  })
-  if (data) {
-    navigateTo ("/dashboard")
-  }
+    const { data, error } = await supabase.auth.signInWithPassword({
+        email: email.value,
+        password: password.value,
+    })
+    if (data) {
+        navigateTo("/dashboard")
+    }
 }
 
 </script>
@@ -55,11 +56,10 @@ async function SignIn() {
     height: 100vh;
 }
 
-.text-center {
-    margin-top: 100px;
-}
 
-.text-center, label {
+
+.text-center,
+label {
     font-family: "Poppins", sans-serif;
 }
 
@@ -68,5 +68,4 @@ async function SignIn() {
     color: white;
     background-color: #C6AC7B;
 }
-
 </style>

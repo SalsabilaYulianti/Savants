@@ -6,37 +6,37 @@ const categories = ref([])
 
 
 const getCake = async () => {
-  const { data, error } = await supabase.from('produk').select(`*, kategori(*)`)
-  .ilike('nama_kue', `%${keyword.value}%`)
-  if (data) {
-    cakes.value = data
+    const { data, error } = await supabase.from('produk').select(`*, kategori(*)`)
+    .ilike('nama_kue', `%${keyword.value}%`)
+    if (data) {
+        cakes.value = data
+        }
     }
-}
 
-const getCategory = async () => {
-    const { data, error } = await supabase.from('kategori').select('*')
-    if (data) categories.value = data
-}
+    const getCategory = async () => {
+        const { data, error } = await supabase.from('kategori').select('*')
+        if (data) categories.value = data
+    }
 
-const cakeFiltered = computed(() => {
-  return cakes.value.filter((c) => {
-    return (
-      c.nama_kue?.toLowerCase().includes(keyword.value.toLowerCase()) ||
-      c.harga?.toLowerCase().includes(keyword.value.toLowerCase())
-    )
-  })
-})
+    const cakeFiltered = computed(() => {
+    return cakes.value.filter((c) => {
+        return (
+        c.nama_kue?.toLowerCase().includes(keyword.value.toLowerCase()) ||
+        c.harga?.toLowerCase().includes(keyword.value.toLowerCase())
+        )
+    })
+    })
 
-const fetchProducts = async (categoryId) => {
-  const { data, error } = await supabase
-    .from('produk')
-    .select('*')
-    .eq('id_kategori', categoryId);
-  
-  if (data) {
-    cakes.value = data
-  }
-};
+    const fetchProducts = async (categoryId) => {
+    const { data, error } = await supabase
+        .from('produk')
+        .select('*')
+        .eq('id_kategori', categoryId);
+    
+    if (data) {
+        cakes.value = data
+    }
+    };
 
 onMounted (() => {
     getCake()

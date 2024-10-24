@@ -3,7 +3,9 @@
         
         <div class="row">
             <div class="col-lg-1 text-end mt-2">
-                <i class="bi bi-arrow-left-circle fs-2"></i>
+                <nuxt-link to="/login"  style="text-decoration: none; color: black;">
+                    <i class="bi bi-arrow-left-circle fs-2"></i>
+                </nuxt-link>
             </div>
             <div class="col-lg-10">
                 <h2 class="mt-3">Dashboard</h2>
@@ -21,7 +23,7 @@
                     </div>
                 </nuxt-link>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 ">
                 <nuxt-link to="/customer" class="text-dark" style="text-decoration: none;">
                     <div class="card rounded-3">
                         <div class="card-body shadow p-3 text-center rounded">
